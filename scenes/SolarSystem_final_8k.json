@@ -1,0 +1,858 @@
+{
+    "ResolutionMultiplier": 10.8,
+		"AspectRatio": 1.777777778,
+    "Eye": [200, 200, 1000],
+    "Shadows": true,
+    "MaxRecursionDepth": 0,
+    "SuperSamplingFactor": 1,
+    "Lights": [
+        {
+            "position": [164, 200, 620],
+            "color": [1.0, 0.6, 0.4]
+        }
+    ],
+    "Objects": [
+        {
+            "type": "sphere",
+            "comment": "Sun",
+            "position": [130, 200, 650],
+            "radius": 22,
+						"shadow": false,
+            "material":
+            {
+                "texture": "textures/sunmap.png",
+                "ka": 1.0,
+                "kd": 1.0,
+                "ks": 0.8,
+                "n": 1
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Mercury",
+            "center": [-80, 204, 0],
+						"axis": [0, 1, 0.10],
+            "innerRadius": 0.5,
+            "outerRadius": 280,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Venus",
+            "center": [-250, 206, -1000],
+						"axis": [0, 1, 0.17],
+            "innerRadius": 0.5,
+            "outerRadius": 480,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Earth",
+            "center": [-166, 208, -1000],
+						"axis": [0, 1, 0.20],
+            "innerRadius": 0.5,
+            "outerRadius": 480,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Mars",
+            "center": [-280, 212, -1000],
+						"axis": [0, 1, 0.18],
+            "innerRadius": 0.5,
+            "outerRadius": 680,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Jupiter",
+            "center": [-102, 222, -1000],
+						"axis": [0, 1, 0.22],
+            "innerRadius": 0.5,
+            "outerRadius": 700,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Saturn",
+            "center": [-80, 242, -1000],
+						"axis": [0, 1, 0.22],
+            "innerRadius": 0.5,
+            "outerRadius": 850,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Uranus",
+            "center": [52, 236, 200],
+						"axis": [0, 1, 0.24],
+            "innerRadius": 0.5,
+            "outerRadius": 420,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Neptune",
+            "center": [143, 242, 200],
+						"axis": [0, 1, 0.33],
+            "innerRadius": 0.5,
+            "outerRadius": 380,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "torus",
+            "comment": "White Torus Pluto",
+            "center": [150, 250, 200],
+						"axis": [0, 1, 0.36],
+            "innerRadius": 0.5,
+            "outerRadius": 400,
+						"shadow": false,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 0.3,
+                "kd": 0.0,
+                "ks": 0.0,
+                "n": 64
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Mercury",
+            "position": [195, 204, 650],
+            "radius": 4,
+            "rotation": [0.6,0.3,0.6],
+            "angle": 70,
+            "material":
+            {
+                "texture": "textures/mercurymap.png",
+                "ka": 0.5,
+                "kd": 1.0,
+                "ks": 0.6,
+                "n": 2
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Venus",
+            "position": [191, 193, 650],
+            "radius": 5,
+            "rotation": [0.6,0.3,0.6],
+            "angle": 70,
+            "material":
+            {
+                "texture": "textures/venusmap.png",
+                "ka": 0.5,
+                "kd": 1.0,
+                "ks": 0.4,
+                "n": 2
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Earth",
+            "position": [216, 206, 620],
+            "radius": 8,
+            "rotation": [0.6,0.3,0.6],
+            "angle": 70,
+            "material":
+            {
+                "texture": "textures/earthmap1k.png",
+                "ka": 0.3,
+                "kd": 1.0,
+                "ks": 0.35,
+                "n": 2
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Mars",
+            "position": [227, 192, 650],
+            "radius": 8,
+            "rotation": [0.6,0.3,0.6],
+            "angle": 70,
+            "material":
+            {
+                "texture": "textures/mars_1k_color.png",
+                "ka": 0.16,
+                "kd": 0.9,
+                "ks": 0.0,
+                "n": 2
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Jupiter",
+            "position": [264, 200, 650],
+            "radius": 17,
+            "rotation": [0.6,0.3,0.35],
+            "angle": 73,
+            "material":
+            {
+                "texture": "textures/jupiter2_1k.png",
+                "ka": 0.2,
+                "kd": 0.9,
+                "ks": 0.0,
+                "n": 2
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Saturn",
+            "position": [230, 170, 650],
+            "radius": 12,
+            "rotation": [0.6,0.3,0.35],
+            "angle": 83,
+            "material":
+            {
+                "texture": "textures/saturnmap.png",
+                "ka": 0.1,
+                "kd": 1.0,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Uranus",
+            "position": [300, 224, 650],
+            "radius": 11,
+            "rotation": [0.6,0.3,0.35],
+            "angle": 73,
+            "material":
+            {
+                "texture": "textures/uranusmap.png",
+                "ka": 0.2,
+                "kd": 0.5,
+                "ks": 0.0,
+                "n": 2
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Nepture",
+            "position": [342, 180, 650],
+            "radius": 9,
+            "rotation": [0.6,0.3,0.6],
+            "angle": 70,
+            "material":
+            {
+                "texture": "textures/neptunemap.png",
+                "ka": 0.2,
+                "kd": 0.2,
+                "ks": 0.0,
+                "n": 2
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Pluto",
+            "position": [235, 254, 650],
+            "radius": 4,
+            "material":
+            {
+                "texture": "textures/plutomap1k.png",
+                "ka": 0.4,
+                "kd": 0.3,
+                "ks": 0.1,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star1",
+            "position": [400, 100, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star2",
+            "position": [200, 100, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star3",
+            "position": [100, 250, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star4",
+            "position": [50, 280, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star5",
+            "position": [10, 350, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star6",
+            "position": [300, 380, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star7",
+            "position": [150, 290, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star8",
+            "position": [30, 10, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star9",
+            "position": [340, 250, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star10",
+            "position": [310, 290, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star11",
+            "position": [210, 270, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star12",
+            "position": [110, 380, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star13",
+            "position": [70, 140, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star14",
+            "position": [80, 90, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star15",
+            "position": [380, 10, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star16",
+            "position": [300, 50, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star17",
+            "position": [270, -80, -850],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star18",
+            "position": [140, 60, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star19",
+            "position": [230, 350, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star20",
+            "position": [380, 400, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star21",
+            "position": [320, 140, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star22",
+            "position": [200, 400, -150],
+            "radius": 4,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star23",
+            "position": [170, 10, -150],
+            "radius": 4,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star24",
+            "position": [410, 310, -150],
+            "radius": 4,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star25",
+            "position": [640, 300, -150],
+            "radius": 3,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star26",
+            "position": [710, 210, -150],
+            "radius": 2,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star27",
+            "position": [770, 400, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star28",
+            "position": [650, 105, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star29",
+            "position": [550, 70, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star30",
+            "position": [531, 110, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star31",
+            "position": [600, 180, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star32",
+            "position": [580, 390, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star33",
+            "position": [700, 350, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star34",
+            "position": [750, 110, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star35",
+            "position": [710, 30, -150],
+            "radius": 3,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star36",
+            "position": [575, 7, -150],
+            "radius": 1,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star37",
+            "position": [515, 420, -150],
+            "radius": 3,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Star38",
+            "position": [750, 110, -150],
+            "radius": 3,
+            "material":
+            {
+                "color": [1.0, 1.0, 1.0],
+                "ka": 1.0,
+                "kd": 0.4,
+                "ks": 0.0,
+                "n": 1
+            }
+        }
+    ]
+}
