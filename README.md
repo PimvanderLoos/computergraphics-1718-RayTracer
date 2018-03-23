@@ -1,3 +1,5 @@
+![Solar System](/scenes/SolarSystem_final_8k.png)
+
 # Raytracer C++ framework for Introduction to Computer Graphics
 
 This is a C++ framework for a raytracer. It is created for the Computer
@@ -104,7 +106,7 @@ by `.png`.
 
 ### Additions
 
-We added support for the following basic shapes: Sphere, Triangle, and Plane.
+We added support for the following basic shapes: Sphere, Triangle, Torus, and Plane.
 We also added support for meshes (.obj files), these are read by the OBJLoader class. In this class the model is resized and translated to fit inside a unit cube located at (0, 0, 0). The user can specify the desired position and scale of the model by using `position` and `scale` attributes in their scene's JSON file. The .obj files are rendered using triangle basic shapes.
 For lighting we used full phong shading. The ambient, diffuse and specular illumination variables can be set per object in their scene's JSON files.
 
