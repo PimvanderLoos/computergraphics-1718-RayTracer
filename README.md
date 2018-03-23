@@ -114,3 +114,6 @@ Other scene variables added to the config are: Shadows (enabled / disabled (defa
 We also added a rotation vector, texture file path, shadows and angle variables to objects, which determine how the textures are displayed. Note that while all objects accept these variables, only spheres use them correctly. The same goes for textures: Only spheres use them correctly. Disabling shadows for an object means that this object won't cast shadows on other objects.
 
 Rotations are done using Rodrigues' rotation formula (https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula) using the axis and angle set in the JSON file along with a hit point and its normal. In our case k is the rotation and N is the normal. Note that zero vectors are not allowed! If there is a zero vector in the JSON, the program uses (1.0, 1.0, 1.0) with a 0 degrees angle instead, thus not rotating at all.
+
+
+[[https://github.com/username/repository/computergraphics-1718-RayTracer/Screenshots/SolarSystem_final_8k.png|alt=solarSytem]]
